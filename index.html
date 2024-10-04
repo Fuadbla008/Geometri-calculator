@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.11/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <title>geometri calculator
+    </title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="col">
+            <!-- this is first card. card item is rectangle -->
+            <div class="card bg-base-100 w-96 shadow-xl">
+                <figure class="px-10 pt-10">
+                    <img src="images/rectangle.png" alt="rectangle"
+                        class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Rectangle</h2>
+                    <p>Area (A)= W X H</p>
+                    <div class="flex justify-center align-middle">
+                        <!-- this section is get Input from user -->
+                         <!-- input 1. get input width -->
+                        <input type="text" placeholder="W" class="w-20 rounded-lg m-2" id="rectangleInput1"><span> W</span>
+
+                        <!-- input 2.  get input Height-->
+                        <input type="text" placeholder="H" class="w-20 rounded-lg m-2" id="rectangleInput2"><span> H</span>
+                    </div>
+
+                    <!-- this is Output for calculation -->
+                    <h1>Output <span id="output">0</span></h1>
+
+                    <div class="card-actions">
+                        <button class="btn btn-primary" id="calculateButton" onclick="rectangleCalculate()">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- this is second card. card item is triangle -->
+            <div class="card bg-base-100 w-96 shadow-xl">
+                <figure class="px-10 pt-10">
+                    <img src="images/triangle.png" alt="rectangle"
+                        class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">triangle</h2>
+                    <p>Area (A)= 05.X B X H</p>
+                    <div class="flex justify-center align-middle">
+                        <!-- this section is get Input from user -->
+                         <!-- input 1. get input base -->
+                        <input type="text" placeholder="B" class="w-20 rounded-lg m-2" id="triangleInput1"><span> B</span>
+
+                        <!-- input 2.  get input Height-->
+                        <input type="text" placeholder="H" class="w-20 rounded-lg m-2" id="triangleInput2"><span> H</span>
+                    </div>
+
+                    <!-- this is Output for calculation -->
+                    <h1>Output <span id="triangleOutput">0</span></h1>
+
+                    <div class="card-actions">
+                        <button class="btn btn-primary" id="calculateButton" onclick="triangleCalculate()">Calculate</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--  -->
+        </div>
+        <div class="col">
+            <div class="container">
+                
+
+            </div>
+        </div>
+    </section>
+
+    <script src="asset/main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
